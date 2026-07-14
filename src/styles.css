@@ -1,9 +1,13 @@
 .app-body {
   display: block;
-  max-width: 600px;
+  background: antiquewhite;
+  max-width: 520px;
+  padding: 10px;
   margin: 40px auto 0 auto;
-  border: 20px solid rgb(212, 212, 225);
   border-radius: 15px;
+  box-shadow:
+    2px 4px rgba(43, 34, 22, 0.04),
+    0 8px 16px rgba(43, 34, 22, 0.08);
 }
 header {
   padding: 20px;
@@ -11,9 +15,10 @@ header {
 }
 main {
   padding: 60px;
-  background-color: rgb(189, 221, 210);
+  border-radius: 10px;
+  background-color: rgb(209, 220, 208);
 }
 footer {
-  background-color: bisque;
+  background-color: antiquewhite;
   padding: 20px;
 }
