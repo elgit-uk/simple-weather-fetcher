@@ -1,0 +1,19 @@
+.app-body {
+  display: block;
+  max-width: 600px;
+  margin: 40px auto 0 auto;
+  border: 20px solid rgb(212, 212, 225);
+  border-radius: 15px;
+}
+header {
+  padding: 20px;
+  background-color: antiquewhite;
+}
+main {
+  padding: 60px;
+  background-color: rgb(189, 221, 210);
+}
+footer {
+  background-color: bisque;
+  padding: 20px;
+}
