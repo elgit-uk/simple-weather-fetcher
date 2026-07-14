@@ -8,11 +8,28 @@
   </head>
   <body>
     <div class="app-body">
-      <header>Search box and search button will be here in this section</header>
+      <header>
+        <form id="weather-search">
+          <input
+            type="text"
+            id="search-input"
+            placeholder="Enter city name..."
+            required
+          />
+          <button type="submit" id="search-button">Search</button>
+        </form>
+      </header>
       <main>
-        This part cotains defult city name (London) and the city that my app
-        user searched for, and their current temp,weather icon and other weather
-        live information
+        <div class="section-one">
+          City name
+          <br />
+          weather description, Emoji
+          <br />
+          Humidity (--%), Wind speed (--)km/h
+        </div>
+        <div class="section-two">
+          Current day of the week and time (format 24hrs)
+        </div>
       </main>
       <footer>
         This project was coded by
