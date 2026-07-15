@@ -3,13 +3,19 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://googleapis.com" />
+    <link rel="preconnect" href="https://gstatic.com" crossorigin />
+    <link
+      href="https://googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap"
+      rel="stylesheet"
+    />
     <title>Simple Weather Fetcher</title>
     <link rel="stylesheet" href="src/styles.css" />
   </head>
   <body>
     <div class="app-body">
       <header>
-        <form id="weather-search">
+        <form id="search-city">
           <input
             type="text"
             id="search-input"
@@ -20,16 +26,18 @@
         </form>
       </header>
       <main>
-        <div class="section-one">
-          City name
-          <br />
-          weather description, Emoji
-          <br />
-          Humidity (--%), Wind speed (--)km/h
-        </div>
-        <div class="section-two">
-          Current day of the week and time (format 24hrs)
-        </div>
+        <section class="weather-info-container">
+          <div class="weather-info">
+            <div class="current-location">London</div>
+            <span class="current-temp"> 23 °C </span>
+            <span class="weather-description-emoji">🌥️</span>
+          </div>
+          <div class="weather-other-info">
+            <span class="weather-description">Mostly Cloudy</span>
+            <div class="current-location-humidity">Humidity: 57%</div>
+            <span class="current-location-wind-speed">Wind: 10km/h</span>
+          </div>
+        </section>
       </main>
       <footer>
         This project was coded by

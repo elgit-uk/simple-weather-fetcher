@@ -1,6 +1,10 @@
 .app-body {
   display: block;
   background: antiquewhite;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  color: #352f2c;
+  font-weight: 500;
+  font-size: medium;
   max-width: 520px;
   padding: 10px;
   margin: 40px auto 0 auto;
@@ -14,11 +18,41 @@ header {
   background-color: antiquewhite;
 }
 main {
-  padding: 60px;
+  padding: 60px 20px;
   border-radius: 10px;
   background-color: rgb(209, 220, 208);
 }
+
+.weather-info-container {
+  display: flex;
+  width: 100%;
+}
+
+.weather-info,
+.weather-other-info {
+  flex: 1;
+  padding: 5px;
+  text-align: center;
+}
+.weather-info {
+  font-family: "Lora", serif;
+  font-weight: 700;
+}
+
+.current-location {
+  font-size: xx-large;
+}
+.current-temp,
+.weather-description-emoji {
+  font-size: x-large;
+}
+.weather-description,
+.current-location-humidity,
+.current-location-wind-speed {
+  padding: 2px;
+}
 footer {
+  font-size: small;
   background-color: antiquewhite;
   padding: 20px;
 }
