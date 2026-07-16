@@ -15,7 +15,7 @@
   <body>
     <div class="app-body">
       <header>
-        <form class="search-city">
+        <form id="search-city">
           <input
             type="text"
             id="search-input"
@@ -29,14 +29,16 @@
         <section class="weather-info-container">
           <div class="weather-info">
             <div class="current-location">London</div>
-            <span class="current-temp"> 23 °C </span>
+            <span class="current-temp"> 23 </span>
+            <sup class="temperature-unit"> °C </sup>
             <span class="weather-description-emoji">🌥️</span>
           </div>
-          <div class="weather-other-info">
-            <span class="weather-description">Mostly Cloudy</span>
-            <div class="current-location-humidity">Humidity: 57%</div>
-            <span class="current-location-wind-speed">Wind: 10km/h</span>
-          </div>
+          <ul class="weather-other-info">
+            <li class="day-time-info">Today 12:22</li>
+            <li class="weather-description">Mostly Cloudy</li>
+            <li class="current-location-humidity">Humidity: 57%</li>
+            <li class="current-location-wind-speed">Wind: 10km/h</li>
+          </ul>
         </section>
       </main>
       <footer>
