@@ -5,7 +5,7 @@
   color: #352f2c;
   font-weight: 500;
   font-size: medium;
-  max-width: 520px;
+  max-width: 600px;
   padding: 10px;
   margin: 40px auto 0 auto;
   border-radius: 10px;
@@ -68,6 +68,7 @@ main,
 
 .weather-info,
 .weather-other-info {
+  font-weight: bold;
   flex: 1;
   text-align: center;
 }
@@ -75,22 +76,19 @@ main,
   margin-left: 10px;
   font-family: "Lora", serif;
   font-weight: 700;
-  font-size: xx-large;
-}
-.current-location,
-.weather-description-emoji {
   font-size: xxx-large;
 }
+
 .weather-other-info {
   list-style-type: none;
 }
 .temperature-unit {
   font-size: small;
 }
-.day-time-info,
-.weather-description,
-.current-location-humidity,
-.current-location-wind-speed {
+.day-time,
+.description,
+.humidity,
+.wind-speed {
   padding: 3px;
 }
 
