@@ -2,6 +2,9 @@ function updateWeatherIfo(response) {
   let currentTemperature = document.querySelector("#current-temperature");
   currentTemperature.innerHTML = Math.round(response.data.temperature.current);
 
+  let currentLocation = document.querySelector("#current-location");
+  currentLocation.innerHTML = response.data.city;
+
   let currentHumidity = document.querySelector("#current-humidity");
   currentHumidity.innerHTML = response.data.temperature.humidity;
 
@@ -20,12 +23,8 @@ function fetchCity(event) {
   event.preventDefault();
 
   let searchedCity = document.querySelector("#search-input");
-  let currentLocation = document.querySelector("#current-location");
-
-  currentLocation.innerHTML = searchedCity.value;
-
   findTheCity(searchedCity.value);
 }
 
-let searchCityElement = document.querySelector("#search-city");
-searchCityElement.addEventListener("submit", fetchCity);
+let searchElement = document.querySelector("#search-city");
+searchElement.addEventListener("submit", fetchCity);
