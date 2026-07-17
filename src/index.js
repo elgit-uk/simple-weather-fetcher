@@ -25,6 +25,6 @@ function fetchCity(event) {
   let searchedCity = document.querySelector("#search-input");
   findTheCity(searchedCity.value);
 }
-
+findTheCity("London");
 let searchElement = document.querySelector("#search-city");
 searchElement.addEventListener("submit", fetchCity);
