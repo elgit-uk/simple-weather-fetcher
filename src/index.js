@@ -53,6 +53,32 @@ function fetchCity(event) {
   let searchedCity = document.querySelector("#search-input");
   findTheCity(searchedCity.value);
 }
-findTheCity("London");
+function displayForecast() {
+  let days = ["D1", "D2", "D3", "D4", "D5"];
+  let forecastForEachDay = "";
+
+  days.forEach(function (day) {
+    forecastForEachDay =
+      forecastForEachDay +
+      `
+  <div class="day">
+    <div class="day-name">${day}</div>
+    <div class="day-weather-description-icon">🌥️</div>
+    <div class="day-temperatures">
+      <span class="day-highest-temp">
+        <strong>15<sup class="day-temperature-unit">°C</sup></strong>
+      </span>
+      <span class="day-lowest-temp">
+        9<sup class="day-temperature-unit">°C</sup>
+      </span>
+    </div>
+  </div>
+`;
+  });
+  let forecastArray = document.querySelector("#forecast");
+  forecastArray.innerHTML = forecastForEachDay;
+}
 let searchElement = document.querySelector("#search-city");
 searchElement.addEventListener("submit", fetchCity);
+findTheCity("London");
+displayForecast();

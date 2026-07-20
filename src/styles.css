@@ -105,17 +105,17 @@ main,
   text-align: center;
 }
 .day-name {
+  margin-top: 30px;
   text-align: center;
   color: #352f2c;
   font-size: 16px;
   line-height: 20px;
   font-weight: bold;
-  margin-bottom: 5px;
 }
 .day-weather-description-icon {
   text-align: center;
   font-size: 24px;
-  margin-bottom: 5px;
+  margin-bottom: 10px;
 }
 .day-temperature-unit {
   font-size: x-small;
