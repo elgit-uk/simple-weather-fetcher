@@ -100,31 +100,31 @@ main,
 .weather-forecast {
   background-color: rgba(255, 255, 255, 0.25);
   color: #352f2c;
-
-  padding: 22px 8px;
+  padding: 28px 8px;
   border-radius: 8px;
   border: 1px solid rgba(255, 255, 255, 0.2);
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   gap: 10px;
+  font-size: 12px;
   text-align: center;
   font-family: "Plus Jakarta Sans", sans-serif;
-  font-size: 14px;
-  font-weight: 600;
+
   line-height: 20px;
 }
 .day-name {
   text-transform: uppercase;
+  font-weight: 600;
 }
-.day-weather-description-icon {
-  text-align: center;
-  font-size: 24px;
-  margin-bottom: 10px;
-}
+
 .day-temperature-unit {
   font-size: x-small;
 }
-
+.image-forecast-icon,
+#weather-description-icon {
+  height: 60px;
+  width: 60px;
+}
 footer {
   border-radius: 7px;
   margin-left: 10px;
