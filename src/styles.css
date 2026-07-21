@@ -98,19 +98,23 @@ main,
 }
 
 .weather-forecast {
+  background-color: rgba(255, 255, 255, 0.25);
+  color: #352f2c;
+
+  padding: 22px 8px;
+  border-radius: 8px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   gap: 10px;
-  margin-top: 30px;
   text-align: center;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 20px;
 }
 .day-name {
-  margin-top: 30px;
-  text-align: center;
-  color: #352f2c;
-  font-size: 16px;
-  line-height: 20px;
-  font-weight: bold;
+  text-transform: uppercase;
 }
 .day-weather-description-icon {
   text-align: center;
